@@ -1,7 +1,8 @@
 # https://leetcode.com/problems/concatenation-of-array/
 
+# Solution_1
 class Solution:
-    def getConcatenation(self, nums: List[int]) -> List[int]:
+    def getConcatenation(self, nums):
         n = len(nums)
         ans = [0 for i in range(2*n)] 
         
@@ -11,8 +12,8 @@ class Solution:
         return ans
     
     
-# 다른 풀이
+# Solutuion_2
 class Solution:
-    def getConcatenation(self, nums: List[int]) -> List[int]:
+    def getConcatenation(self, nums):
         return nums*2
         # return nums + nums
