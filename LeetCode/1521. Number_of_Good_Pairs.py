@@ -12,3 +12,10 @@ class Solution:
                     count += 1
         return count
     
+    
+# Solution_2
+from collections import Counter  
+
+class Solution:
+    def numIdenticalPairs(self, nums):
+       return sum(k * (k - 1) / 2 for k in Counter(nums).values())  # Counter(nums) : 요소의 개수가 많은 것부터 출력
