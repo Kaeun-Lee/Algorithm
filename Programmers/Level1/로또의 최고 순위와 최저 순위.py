@@ -2,7 +2,7 @@
 
 # Solution_1
 def solution(lottos, win_nums):
-    rank ={6:1, 5:2, 4:3, 3:4, 2:5, 1:6, 0:6}
+    rank = {6:1, 5:2, 4:3, 3:4, 2:5, 1:6, 0:6}
     answer = []
     min_num = max_num = 0
 
@@ -18,7 +18,7 @@ def solution(lottos, win_nums):
 
 # Solution_2
 def solution(lottos, win_nums):
-    rank = [6,6,5,4,3,2,1]
+    rank = [6,6,5,4,3,2,1]      # index -> 맞힌 개수, 정수 -> 순위
     cnt_0 = lottos.count(0)
     ans = 0
     
