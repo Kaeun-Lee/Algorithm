@@ -1,4 +1,4 @@
-# 2021 KAKAO BLIND RECRUITMENT / https://programmers.co.kr/learn/courses/30/lessons/72410
+# 2021 KAKAO BLIND RECRUITMENT | https://programmers.co.kr/learn/courses/30/lessons/72410
 
 # Solution_1
 def solution(new_id):
@@ -40,8 +40,8 @@ test_case2 = solution("z-+.^.")
 test_case3 = solution("=.=")
 test_case4 = solution("123_.def")
 test_case5 = solution("abcdefghijklmn.p")
-print(test_case1)
-print(test_case2)
-print(test_case3)
-print(test_case4)
-print(test_case5)
+print(test_case1)  # bat.y.abcdefghi
+print(test_case2)  # z--
+print(test_case3)  # aaa
+print(test_case4)  # 123_.def
+print(test_case5)  # abcdefghijklmn
