@@ -64,6 +64,45 @@ def solution(n, arr1, arr2):
     return answer
 
 
+# Solution_4 -> 이진법을 직접 구현
+def solution(n, arr1, arr2):
+    answer_1 = []
+    answer_2 = []
+    final =[]
+    rules = [2**i for i in range(n-1, -1, -1)]
+    ret =''
+    
+    for ans_1 in arr1:
+        for i in rules:
+            if ans_1 >= i:
+                ret += '#'
+                ans_1 -= i
+            else:
+                ret += ' '
+        answer_1.append(ret)
+        ret = ''
+        
+    for ans_2 in arr2:
+        for i in rules:
+            if ans_2 >= i:
+                ret += '#'
+                ans_2 -= i
+            else:
+                ret += ' '
+        answer_2.append(ret)
+        ret = ''
+    
+    for i in range(n):
+        for j in range(n):
+            if answer_1[i][j] == ' ' and answer_2[i][j] == ' ':
+                ret += ' '
+            else:
+                ret += '#'
+        final.append(ret)
+        ret = ''
+    return final
+
+
 
 test_case1 = solution(5, [9, 20, 28, 18, 11], [30, 1, 21, 17, 28])
 test_case2 = solution(6, [46, 33, 33 ,22, 31, 50], [27 ,56, 19, 14, 14, 10])
