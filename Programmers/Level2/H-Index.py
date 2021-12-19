@@ -15,5 +15,7 @@ def solution(citations):
     
     return max(answer)
 
+# Solution_2
+
 test_case = solution([3, 0, 6, 1, 5])
 print(test_case) # 3
