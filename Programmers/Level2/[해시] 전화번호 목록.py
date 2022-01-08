@@ -29,6 +29,6 @@ def solution(phone_book):
 test_case1 = solution(["119", "97674223", "1195524421"])
 test_case2 = solution(["123","456","789"])
 test_case3 = solution(["12","123","1235","567","88"])
-print(test_case1)
-print(test_case2)
-print(test_case3)
+print(test_case1) # false
+print(test_case2) # true
+print(test_case3) # false
