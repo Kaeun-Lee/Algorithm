@@ -28,6 +28,26 @@ def solution(s):
     return minimum
 
 
+# Solution_2
+def solution(s):
+    start = ''
+    cnt = 1
+    answer = ''
+    
+    for i in range(len(s)):
+        start += s[0:i+1]
+        for j in range(0, len(s), len(start)):
+            next = s[len(start)+j : len(start)+j+len(start)]
+            if next == start:
+                cnt += 1
+            elif next != start:
+                answer += str(cnt)
+                answer += start
+                cnt = 1
+                       
+    return answer
+
+
 
 test_case1 = solution("aabbaccc")
 test_case2 = solution("ababcdcdababcdcd")
