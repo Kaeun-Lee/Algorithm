@@ -8,7 +8,7 @@ for i in range(row):
     min_num = min(list(map(int, input().split())))  # 각 행에서 가장 작은 수
     result.append(min_num)
     
-print(max(result))  # 2 | 3 그 중 가장 큰 수
+print(max(result))                                  # 그 중 가장 큰 수
 
 
 # Solution_2 -> Solution_1과 비슷한 풀이
@@ -43,13 +43,15 @@ print(result)
 
 
 
-# 입력1
-# 3 3
-# 3 1 2
-# 4 1 4
-# 2 2 2
+# test_case1
+# 입력 : 3 3
+#        3 1 2
+#        4 1 4
+#        2 2 2
+# 출력 : 2
 
-# 입력2
-# 2 4
-# 7 3 1 8
-# 3 3 3 4
+# test_case2
+# 입력 : 2 4
+#        7 3 1 8
+#        3 3 3 4
+# 출력 : 3
