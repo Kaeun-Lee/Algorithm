@@ -16,12 +16,13 @@ result = 0
 result += (count) * first       # 가장 큰 수 더하기
 result += (m - count) * second  # 두 번째로 큰 수 더하기
 
-print(result)                   # 46 | 28
+print(result)  
 
 
 # Solution_2
 # N, M, K를 공백으로 구분하여 입력받기
 n, m, k = map(int, input().split())
+
 # N개의 수를 공백으로 구분하여 입력받기
 data = list(map(int, input().split()))
 
@@ -42,14 +43,16 @@ while True:
     result += second    # 두 번째로 큰 수를 한 번 더하기
     m -= 1
     
-print(result)           # 최종 답안 출력
+print(result)          
 
 
 
-# 입력 1
-# 5 7 2
-# 2 4 3 4 6
+# test_case1
+# 입력 : 5 7 2
+#        2 4 3 4 6
+# 출력 : 46
 
-# 입력 2
-# 5 7 2
-# 3 4 3 4 3
+# test_case2
+# 입력 : 5 7 2
+#        3 4 3 4 3
+# 출력 : 28
