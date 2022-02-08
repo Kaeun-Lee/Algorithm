@@ -18,3 +18,19 @@ class Solution:
             result = pri + sec
             
         return result
+    
+    
+# Solution_2
+from collections import Counter
+
+class Solution:
+    def oddCells(self, n: int, m: int, indices: List[List[int]]) -> int:
+        zipped = zip(*indices)
+        rows, cols = Counter(next(zipped)), Counter(next(zipped))
+
+        odd_rows = sum([1 for x in rows.values() if x & 1])
+        odd_cols = sum([1 for x in cols.values() if x & 1])
+        even_rows = n - odd_rows
+        even_cols = m - odd_cols
+
+        return odd_rows * even_cols + even_rows * odd_cols
