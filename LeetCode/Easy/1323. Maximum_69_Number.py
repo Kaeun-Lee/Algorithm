@@ -15,7 +15,7 @@ class Solution:
         while tem > 0:
             if tem % 10 == 6:
                 sixidx = i      # refresh sixidx when found 6 at large digit
-            tem = tem // 10       # shift tem by 1 digit
+            tem = tem // 10     # shift tem by 1 digit
             i += 1              # increase the digit index by 1
         return (num + 3 *(10**sixidx)) if sixidx != -1 else num  # (9669 + 3 * (10^2)) = 9969
 

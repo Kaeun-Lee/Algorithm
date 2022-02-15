@@ -23,7 +23,7 @@ from itertools import accumulate as acc  # list(acc([1,2,3])) -> [1, 3, 6]
 
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
-        return list(acc(1 if c == 'L' else -1 for c in s)).count(0)  # 리스트 중 0의 개수
+        return list(acc(1 if c == 'L' else -1 for c in s)).count(0)  # 리스트 중 0의 개수, [-1, 0, -1, -2, -1, 0, -1, 0, -1, 0].count(0)
     
 
 # Solution_3
@@ -46,3 +46,13 @@ class Solution:
             if cnt == 0:
                 res += 1
         return res  
+    
+    
+    
+sol = Solution()
+test_case1 = sol.balancedStringSplit("RLRRLLRLRL")
+test_case2 = sol.balancedStringSplit("RLLLLRRRLR")
+test_case3 = sol.balancedStringSplit("LLLLRRRR")
+print(test_case1)  # 4
+print(test_case2)  # 3
+print(test_case3)  # 1
