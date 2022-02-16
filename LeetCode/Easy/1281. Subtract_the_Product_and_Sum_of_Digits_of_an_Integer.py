@@ -12,7 +12,6 @@ class Solution:
     
 
 # Solution_2 : Runtime 감소
-
 from functools import reduce
 from operator import mul 
 
@@ -20,3 +19,11 @@ class Solution:
     def subtractProductAndSum(self, n: int) -> int:
         A = list(map(int, str(n)))  # 문자열의 모든 요소를 int로 변환한 뒤, 다시 list로 만든다
         return reduce(mul, A) - sum(A)
+    
+    
+
+sol = Solution()
+test_case1 = sol.subtractProductAndSum(234)
+test_case2 = sol.subtractProductAndSum(4421)
+print(test_case1)  # 15
+print(test_case2)  # 21
