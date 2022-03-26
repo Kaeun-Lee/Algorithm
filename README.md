@@ -1,7 +1,5 @@
 # Algorithm
 
-## 문제 출처
-
 1. CodeUp  
 https://codeup.kr/problemset.php
 
@@ -15,3 +13,6 @@ https://leetcode.com/problemset/all/
 https://programmers.co.kr/learn/challenges  
   - Level 1  
   - Level 2  
+
+
+4. 나동빈 이취코테
