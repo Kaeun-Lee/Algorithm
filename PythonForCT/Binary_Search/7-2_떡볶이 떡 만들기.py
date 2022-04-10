@@ -1,17 +1,16 @@
 # Binary Search
 
-# Solution_1 -> 이진 탐색(반복문)
+# Solution_1 -> 이진 탐색 (반복문)
 n, m  = map(int, input().split())
 array = list(map(int, input().split()))
 height = [i for i in range(max(array))]  # 가장 긴 길이만큼 배열 생성
-
 
 def binary_search(array, height, target, start, end):
     result = 0
     while start <= end:
         mid = (start + end) // 2
-
         rest_sum = 0
+
         for i in array:
             rest = i - height[mid]
             if rest > 0:
@@ -27,7 +26,7 @@ def binary_search(array, height, target, start, end):
 print(binary_search(array, height, m, 0, len(height) - 1))
 
 
-# Solution_2 -> 이진 탐색(답안)
+# Solution_2 -> 이진 탐색 (답안)
 n, m = list(map(int, input().split()))   # 떡의 개수(N)와 요청한 떡의 길이(M)을 입력받기
 array = list(map(int, input().split()))  # 각 떡의 개별 높이 정보를 입력받기
 
@@ -35,7 +34,7 @@ array = list(map(int, input().split()))  # 각 떡의 개별 높이 정보를 �
 start = 0
 end = max(array)
 
-# 이진 탐색 수행(반복적)
+# 이진 탐색 수행 (반복적)
 result = 0
 while (start <= end):
     total = 0

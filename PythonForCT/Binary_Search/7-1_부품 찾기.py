@@ -1,6 +1,6 @@
 # Search
 
-# Solution_1-1 -> Binary Search(재귀함수)
+# Solution_1-1 -> 이진 탐색 (재귀 함수)
 n = int(input())
 data = list(map(int, input().split()))
 m = int(input())
@@ -22,24 +22,33 @@ def binary_search(array, target, start, end):
     else:
         return binary_search(array, target, mid + 1, end)
 
+# (1) 반복문 안에서 함수를 적용하여 각 target의 결과를 구하고 비교해서 출력
 for i in request:
     if binary_search(data, i, 0, n -1) == True:
         print("yes", end=' ')
     else:
         print("no", end=' ')
 
+# (2) map 함수를 적용해서 결과값을 모두 구한 뒤 결과를 비교해서 출력
+# result = list(map(lambda i: binary_search(data, i, 0, n -1, request)))
+# for r in result:
+#     if r == True:
+#         print("yes", end=' ')
+#     else:
+#         print("no", end=' ')
 
-# Solution_1-2 -> Binary Search(반복문)
+
+# Solution_1-2 -> 이진 탐색 (반복문)
 def binary_search(array, target, start, end):
     while start <= end:
         mid = (start + end) // 2
-        # 찾은 경우 중간점 인덱스 반환
+        # 찾은 경우 중간점 index 반환
         if array[mid] == target:
             return mid
-        # 중간점의 값보다 찾고자 하는 값이 작은 경우 왼쪽 확인
+        # 중간점의 값보다 찾고자 하는 값이 작은 경우, 왼쪽 확인
         elif array[mid] > target:
             end = mid - 1
-        # 중간점의 값보다 찾고자 하는 값이 큰 경우 오른쪽 확인
+        # 중간점의 값보다 찾고자 하는 값이 큰 경우, 오른쪽 확인
         else:
             start = mid + 1
     return None
@@ -52,15 +61,14 @@ x = list(map(int, input().split()))      # 손님이 확인 요청한 전체 부
 
 # 손님이 확인 요청한 부품 번호를 하나씩 확인
 for i in x:
-    # 해당 부품이 존재하는지 확인
-    result = binary_search(array, i, 0, n - 1)
+    result = binary_search(array, i, 0, n - 1)  # 해당 부품이 존재하는지 확인
     if result != None:
         print('yes', end=' ')
     else:
         print('no', end=' ')
 
 
-# Solution_2-1 -> Count Sort
+# Solution_2-1 -> 계수 정렬
 n = int(input())
 data = list(map(int, input().split()))
 m = int(input())
@@ -80,9 +88,9 @@ for i in request:
         print('no', end=' ')
         
 
-# Solution_2-2 -> Count Sort(답안)
+# Solution_2-2 -> 계수 정렬 (답안)
 n = int(input())
-array = [0] * 1000001  # 모든 원소의 번호를 포함할 수 있는 크기의 리스트
+array = [0] * 1000001  # 모든 원소의 번호를 포함할 수 있는 크기의 리스트 (부품의 고유 번호 최댓값 -> 1,000,000)
 
 # 가게에 있는 전체 부품 번호를 입력받아서 기록
 for i in input().split():
@@ -98,7 +106,7 @@ for i in x:
         print('no', end=' ')
 
     
-# Solution_3 -> Set Function
+# Solution_3 -> 집합 자료형, 코드 간결성 우수
 n = int(input())
 data = list(map(int, input().split()))
 m = int(input())
@@ -118,7 +126,7 @@ for i in request:
         print('no', end=' ')
 
 
-# Solution_3-2 -> Set Function(답안)
+# Solution_3-2 -> 집합 자료형 (답안)
 n = int(input())
 # 가게에 있는 전체 부품 번호를 입력받아서 집합(set) 자료형에 기록
 array = set(map(int, input().split()))
@@ -131,6 +139,16 @@ for i in x:
         print('yes', end=' ')
     else:
         print('no', end=' ')
+
+
+
+# *참고 : 데이터가 최대 1백만 개까지 주어질 수 있으므로 sys.stdin.readline()으로 input data 가져오기
+# import sys
+# n = int(sys.stdin.readline())
+# total = list(map(int, sys.stdin.readline().strip().split()))
+# total.sort()
+# m = int(sys.stdin.readline())
+# request = list(map(int, sys.stdin.readline().strip().split()))
 
 
 
