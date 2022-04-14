@@ -7,13 +7,29 @@
 
 2. LEET CODE   
 - Leet Code site : https://leetcode.com/problemset/all/    
-
+|Number|Title|Category|Solution|
+|:------:|:-------:|:--------:|:--------:|
 
 
 3. Programmers   
 - Programmers site : https://programmers.co.kr/learn/challenges  
-  - Level 1  
-  - Level 2  
+
+
+|Level|Title|Category|Solution|
+|:------:|:-------:|:--------:|:--------:|
+|Level1|완주하지 못한 선수|Hash||
+|Level1|다트 게임|||
+|Level1|로또의 최고 순위와 최저 순위|||
+|Level1|비밀지도|||
+|Level1|숫자 문자열과 영단어|||
+|Level1|신규 아이디 추천|||
+|Level1|없는 숫자 더하기|||
+|Level1|음양 더하기|||
+|Level1|크레인 인형뽑기 게임|||
+|Level1|키패드 누르기|||
+
+
+
 
 
 4. PythonForCT
