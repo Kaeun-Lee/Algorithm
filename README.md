@@ -15,6 +15,7 @@
 - Programmers site : https://programmers.co.kr/learn/challenges  
 
 
+
 |Level|Title|Category|Solution|
 |:------:|:-------:|:--------:|:--------:|
 |Level1|완주하지 못한 선수|Hash||
@@ -26,7 +27,16 @@
 |Level1|없는 숫자 더하기|||
 |Level1|음양 더하기|||
 |Level1|크레인 인형뽑기 게임|||
-|Level1|키패드 누르기|||
+|Level2|프린터|Stack, Queue||
+|Level2|H-Index|Sort||
+|Level2|구명보트|Greedy||
+|Level2|전화번호 목록|Hash||
+|Level2|더 맵게|Heap||
+|Level2|멀쩡한 사각형|||
+|Level2|문자열 압축|||
+|Level2|오픈채팅방|||
+|Level2|JadenCase 문자열 만들기|||
+
 
 
 
