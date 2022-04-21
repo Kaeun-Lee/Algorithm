@@ -71,3 +71,4 @@
 ||순차 탐색(Sequential Search)|Concept||
 ||이진 탐색(Binary Search)|Concept||
 ||피보나치 (Fibonacci)|Concept||
+|8-1|1로 만들기Dynamic Programming||
