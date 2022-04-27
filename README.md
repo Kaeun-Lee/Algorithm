@@ -7,9 +7,9 @@
 
 2. LEET CODE   
 - Leet Code site : https://leetcode.com/problemset/all/    
-|Number|Title|Category|Solution|
-|:------:|:-------:|:--------:|:--------:|
-
+|Number|Difficulty|Title|Category|Solution|
+|:------:|:-------:|:--------:|:--------:|:-------:|
+|983|Easy|Range Sum of BST|||
 
 3. Programmers   
 - Programmers site : https://programmers.co.kr/learn/challenges  
