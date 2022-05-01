@@ -6,10 +6,12 @@
 
 
 2. LEET CODE   
-- Leet Code site : https://leetcode.com/problemset/all/    
+- Leet Code site : https://leetcode.com/problemset/all/  
+
 |Number|Difficulty|Title|Category|Solution|
 |:------:|:-------:|:--------:|:--------:|:-------:|
 |983|Easy|Range Sum of BST|||
+
 
 3. Programmers   
 - Programmers site : https://programmers.co.kr/learn/challenges  
@@ -18,24 +20,24 @@
 
 |Level|Title|Category|Solution|
 |:------:|:-------:|:--------:|:--------:|
-|Level1|완주하지 못한 선수|Hash||
-|Level1|다트 게임|||
-|Level1|로또의 최고 순위와 최저 순위|||
-|Level1|비밀지도|||
-|Level1|숫자 문자열과 영단어|||
-|Level1|신규 아이디 추천|||
-|Level1|없는 숫자 더하기|||
-|Level1|음양 더하기|||
-|Level1|크레인 인형뽑기 게임|||
-|Level2|프린터|Stack, Queue||
-|Level2|H-Index|Sort||
-|Level2|구명보트|Greedy||
-|Level2|전화번호 목록|Hash||
-|Level2|더 맵게|Heap||
-|Level2|멀쩡한 사각형|||
-|Level2|문자열 압축|||
-|Level2|오픈채팅방|||
-|Level2|JadenCase 문자열 만들기|||
+|Level 1|완주하지 못한 선수|Hash||
+|Level 1|다트 게임|||
+|Level 1|로또의 최고 순위와 최저 순위|||
+|Level 1|비밀지도|||
+|Level 1|숫자 문자열과 영단어|||
+|Level 1|신규 아이디 추천|||
+|Level 1|없는 숫자 더하기|||
+|Level 1|음양 더하기|||
+|Level 1|크레인 인형뽑기 게임|||
+|Level 2|프린터|Stack, Queue||
+|Level 2|H-Index|Sort||
+|Level 2|구명보트|Greedy||
+|Level 2|전화번호 목록|Hash||
+|Level 2|더 맵게|Heap||
+|Level 2|멀쩡한 사각형|||
+|Level 2|문자열 압축|||
+|Level 2|오픈채팅방|||
+|Level 2|JadenCase 문자열 만들기|||
 
 
 
@@ -71,4 +73,4 @@
 ||순차 탐색(Sequential Search)|Concept||
 ||이진 탐색(Binary Search)|Concept||
 ||피보나치 (Fibonacci)|Concept||
-|8-1|1로 만들기Dynamic Programming||
+|8-1|1로 만들기|Dynamic Programming||
