@@ -11,6 +11,8 @@
 |Number|Difficulty|Title|Category|Solution|
 |:------:|:-------:|:--------:|:--------:|:-------:|
 |983|Easy|Range Sum of BST|||
+|1221|Easy|Split a String in Balanced Strings|||
+|1281|Easy|Subtract the Product and Sum of Digits of an Integer|||
 
 
 3. Programmers   
