@@ -13,7 +13,7 @@
 |983|Easy|Range Sum of BST|||
 |1221|Easy|Split a String in Balanced Strings|||
 |1281|Easy|Subtract the Product and Sum of Digits of an Integer|||
-
+|1309|Easy|Decrypt String from Alphabet to Integer Mapping.py|||
 
 3. Programmers   
 - Programmers site : https://programmers.co.kr/learn/challenges  
