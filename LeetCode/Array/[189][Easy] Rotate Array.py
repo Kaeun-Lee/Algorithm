@@ -27,19 +27,19 @@ class Solution:
 # Solution_3 -> Use Auxiliary Space / Time : O(n), Space : O(n) (*n : num's length)
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
-        auxArr = [0] * len(nums)
+        auxArr = [0] * len(nums)  # add another auxiliary to store moved nums
         k %= len(nums)
         for i in range(len(nums)):
             auxArr[(i + k) % len(nums)] = nums[i]
-        nums[:] = auxArr
+        nums[:] = auxArr          # replace nums[:] = auxiliary
 
 
 # Solution_4 -> *Reverse Array / Time : O(2n) = O(n), Space : O(1)
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         k %= len(nums)
-        self.reverseArray(0, len(nums) - 1, nums) # Step 1: Reverse nums => [7, 6, 5, 4, 3, 2, 1]
-        self.reverseArray(0, k - 1, nums)         # Step 2: Reverse from 0 ~ k and k+1 ~ len(nums) => nums = [5, 6, 7, 1, 2, 3, 4]
+        self.reverseArray(0, len(nums) - 1, nums)  # Step 1: Reverse nums => [7, 6, 5, 4, 3, 2, 1]
+        self.reverseArray(0, k - 1, nums)          # Step 2: Reverse from 0 ~ k and k+1 ~ len(nums) => nums = [5, 6, 7, 1, 2, 3, 4]
         self.reverseArray(k, len(nums) - 1, nums)
 
     def reverseArray(self, left, right, array):
@@ -50,13 +50,13 @@ class Solution:
 
 
 # Solution_5 -> Cyclic Move elements / Time : O(n), Space : O(1)
-# * Explanation : We divided nums by k groups, and each time we move one group to desire index.
-#                 Once counter == len(nums) means we have moved all elements so the array is in-place moved.
-# * Eventually we have to move array's element n times, so we set a counter move = 0
-#   -> Step 1 : Start from index 0
-#               => Each time we move elements to index (current + k), 
-#                  once we found our current == start, means we finished a cycle group
-#      Step 2 : Increase start by 1 => Back to Step 1
+# *Explanation : We divided nums by k groups, and each time we move one group to desire index.
+#                Once counter == len(nums) means we have moved all elements so the array is in-place moved.
+# *Eventually we have to move array's element n times, so we set a counter move = 0
+#  -> Step 1 : Start from index 0
+#              => Each time we move elements to index (current + k), 
+#                 once we found our current == start, means we finished a cycle group
+#     Step 2 : Increase start by 1 => Back to Step 1
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         k %= len(nums)
