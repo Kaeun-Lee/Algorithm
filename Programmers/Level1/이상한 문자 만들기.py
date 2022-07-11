@@ -37,7 +37,7 @@ def solution(s):
     return " ".join(map(lambda x: "".join([a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]), s.split(" ")))
 
 
-# Solution_4 -> list comprehention
+# Solution_4 -> list comprehension
 def solution(s):
     return ' '.join([''.join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(w)]) for w in s.split(" ")])
 
