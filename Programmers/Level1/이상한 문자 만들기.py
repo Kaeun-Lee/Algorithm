@@ -18,7 +18,17 @@ def solution(s):
     return result
 
 
-# Solution_2
+# Solution_2 -> map, lambda 이용
+def solution(s):
+    return " ".join(map(lambda x: "".join([a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]), s.split(" ")))
+
+
+# Solution_3 -> list comprehension
+def solution(s):
+    return ' '.join([''.join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(w)]) for w in s.split(" ")])
+
+
+# Solution_4
 def solution(s):
     words = s.split(' ')  # ['try', 'hello', 'world']
     for i, word in enumerate(words):  # 0 try
@@ -30,16 +40,6 @@ def solution(s):
                 word[idx] = char.lower()
         words[i] = ''.join(word)  # TrY
     return ' '.join(words)
-
-
-# Solution_3 -> map, lambda 이용
-def solution(s):
-    return " ".join(map(lambda x: "".join([a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]), s.split(" ")))
-
-
-# Solution_4 -> list comprehension
-def solution(s):
-    return ' '.join([''.join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(w)]) for w in s.split(" ")])
 
 
 # test case
