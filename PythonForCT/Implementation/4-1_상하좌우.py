@@ -1,6 +1,34 @@
 # Implementation
 
 # Solution_1
+n = int(input())
+map = input().split()
+
+xy = (1, 1)
+
+# 좌표
+d = (1, 0)
+u = (-1, 0)
+r = (0, 1)
+l = (0, -1)
+
+for i in range(len(map)):
+    if map[i] == 'D':
+        temp_xy = (xy[0] + d[0], xy[1] + d[1])
+    elif map[i] == 'U':
+        temp_xy = (xy[0] + u[0], xy[1] + u[1])
+    elif map[i] == 'R':
+        temp_xy = (xy[0] + r[0], xy[1] + r[1])
+    else:
+        temp_xy = (xy[0] + l[0], xy[1] + l[1])
+    if temp_xy[0] < 1 or temp_xy[0] > n or temp_xy[1] < 1 or temp_xy[0] > n:
+        continue
+    else:
+        xy = temp_xy
+print(xy[0], xy[1])
+
+
+# Solution_2
 size = int(input())
 direction = list(input().split())
 start = [1,1]
@@ -17,7 +45,7 @@ for i in direction:
 print(start[0], start[1])     
 
 
-# Soluton_2
+# Soluton_3
 # N을 입력받기
 n = int(input())
 x, y = 1, 1
